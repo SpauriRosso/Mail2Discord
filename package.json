@@ -1,0 +1,20 @@
+{
+  "name": "mail2discord",
+  "version": "1.0.0",
+  "description": "Utility app that listens for mails and send them to discord",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-personal:SpauriRosso/Mail2Discord"
+  },
+  "keywords": [
+    "discord",
+    "mail",
+    "docker"
+  ],
+  "author": "SpauriRosso",
+  "license": "GPL-3.0-or-later"
+}
