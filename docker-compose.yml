@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  mailhog:
+    image: mailhog/mailhog
+    container_name: mailhog
+    ports:
+      - "25:25" # Expose the MailHog web UI
+      - "8025:8025" # Expose the SMTP port for sending emails
+
+  m2d:
+    build:
+      context: .
+    container_name: m2d
+    ports:
+      - "3000:3000"
+    environment:
+      - DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/1313462562444021800/4GYfeDmj0oBiWyAMAqLBsJtCMzJphhto_Kpvtj4DvZAd5tq-f90ujS_g7Tc-GFydg-Yt
